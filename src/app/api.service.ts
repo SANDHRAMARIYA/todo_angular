@@ -16,5 +16,11 @@ export class ApiService {
     return this.http.post("http://localhost:8080/login",data)
   }
 
-  
+addPosts=(data:any)=>{
+  return this.http.post("http://localhost:8080/addpost",data)
+}
+
+viewSingle=(data:any)=>{
+  return this.http.post("http://localhost:8080/viewSingle",data)
+}
 }
