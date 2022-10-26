@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-signin',
@@ -7,8 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./signin.component.css']
 })
 export class SigninComponent implements OnInit {
-
-  constructor(private myrouter:Router,private myapi:) { }
+email=""
+password=""
+  constructor(private myrouter:Router,private myapi:ApiService) { }
   readValue=()=>{
     let data={
       "email":this.email,
