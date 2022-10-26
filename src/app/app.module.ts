@@ -7,16 +7,21 @@ import { SigninComponent } from './signin/signin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './signup/signup.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:SigninComponent
+  },
+  {
+    path:"signup",component:SignupComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
